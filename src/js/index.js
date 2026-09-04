@@ -19,7 +19,7 @@ const searchUser = async () => {
     try {
         const userData = await fetchGitHubUser(userName);
         const userRepos = await fetchGitHubUserRepos(userName);
-        renderProfile(userData, userRepos, profileResults);
+        await renderProfile(userData, userRepos, profileResults);
     } catch (error) {
         console.error('Erro ao buscar o perfil do usuário:', error);
         alert('Usuário não encontrado. Por favor, verifique o nome de usuário e tente novamente.');

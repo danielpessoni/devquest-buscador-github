@@ -251,6 +251,24 @@ main {
   text-align: left;
 }
 
+.repository-link {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.repository-link:hover h3 {
+  color: #667eea;
+}
+
+.repository-card p {
+  font-size: var(--font-sm);
+  color: var(--muted-foreground);
+  margin-bottom: 1rem;
+  text-align: left;
+  flex-grow: 1;
+}
+
 .repository-stats {
   display: flex;
   flex-direction: column;
@@ -267,3 +285,55 @@ main {
   margin-bottom: 0.25rem;
   text-align: left;
 }
+
+.repository-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.repository-btn {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: var(--font-xs);
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.repository-btn-readme {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.repository-btn-readme:hover:not(:disabled) {
+  background: #667eea;
+  box-shadow: var(--shadow-sm);
+}
+
+.repository-btn-pages {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.repository-btn-pages:hover:not(:disabled) {
+  background: #1d4ed8;
+  box-shadow: var(--shadow-sm);
+}
+
+.repository-btn:disabled {
+  background: #e2e8f0;
+  color: #94a3b8;
+  cursor: not-allowed;
+  border-color: #cbd5e1;
+  box-shadow: none;
+}

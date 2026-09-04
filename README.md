@@ -11,6 +11,8 @@ Esta aplicação permite que você insira um nome de usuário do GitHub e veja a
 -   **Busca de Perfil:** Encontre qualquer usuário do GitHub.
 -   **Informações do Perfil:** Exibe o avatar, nome e biografia do usuário.
 -   **Repositórios Recentes:** Lista os 10 últimos repositórios criados pelo usuário, com links diretos.
+-   **README:** Exibe (se disponível) o README do projeto.
+-   **GitHub Pages:** Exibe (se disponível) a página publicada do projeto.
 -   **Estado de Carregamento:** Fornece feedback visual enquanto os dados estão sendo buscados na API.
 -   **Design Responsivo:** Adaptável a diferentes tamanhos de tela.
 
